@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers no-applicationcache svg inlinesvg smil svgclippaths" style="">
+
+  <head>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/solarsystem.css">
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body onLoad="init();">
+    <div class="darkcontentwrapper">
+      <canvas id="gameCanvas" width="100" height="400">
+        The browser you are using is outdated and does not support many modern web standards. Not only does this mean you're missing
+        out on awesome content like this, it also poses some security risks. We strongly recommend that you update to a modern
+        browser such as <a href="http://www.google.com/chrome">Google Chrome</a> or <a href="http://www.firefox.com/">Mozilla Firefox</a>.
+      </canvas>
+      <div class="descriptionbox">
+        <!--<h2>Development version<span id="fps"></span></h2>-->
+        <p>Scale: <span id="posscale"></span> km/pixel</p>
+        <h3><span id="name"></span></h3>
+        <p><span id="note"></span></p>
+        <hr/>
+        <h3>Controls:</h3>
+        <p>Left/right, A/D or click and drag to move.</p>
+        <p>Up/down, W/S or mouse wheel to zoom.</p>
+        <p>Click for info, double click to centre on.</p>
+        <p>Home key to reset to start position.</p>
+        <hr/>
+        <h3>Disclaimer:</h3>
+        <p>This page is still under development, and as such, features and information may be missing or inaccurate.
+            Please excuse the several spelling mistakes and grammatical errors.</p>
+
+      </div>
+
+    <script src="js/vendor/jquery-1.9.1.min.js"></script>
+
+    <script src="js/vendor/easeljs-0.7.0.min.js"></script>
+    <script src="js/vendor/tweenjs-0.5.0.min.js"></script>
+    <script src="js/vendor/soundjs-0.5.0.min.js"></script>
+    <script src="js/vendor/preloadjs-0.4.0.min.js"></script>
+
+    <script src="js/solarsystem.js"></script>
+
+
+  </body>
+</html>

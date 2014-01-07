@@ -1,0 +1,660 @@
+/*
+ * HTML5 Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #eee;
+    background: #000;
+}
+
+button,
+input,
+select,
+textarea {
+    color: #111;
+    background: #fff;    
+    padding: 0.4em;
+    border: thin #888 solid;
+}
+
+
+body {
+    font-size: 0.9em;
+    line-height: 1.4;
+    font-family: verdana;
+    text-align: center;
+    min-width: 400px;
+    width: auto !important;
+    width: 480px;
+}
+
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #ccc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #ccc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+ */
+
+img {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Chrome Frame prompt
+   ========================================================================== */
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+
+#headerwrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 68px;
+    
+    background: #222;
+    background: -webkit-linear-gradient(#444, #111); /* For Safari */
+    background: -o-linear-gradient(#444, #111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#444, #111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#444, #111); /* Standard syntax */
+
+    border-bottom: thin #333 solid;
+	
+    z-index: 50;
+    text-align: center;
+    box-shadow: 0px 5px 5px #080808;
+	
+	text-shadow: -1px 2px #000;
+
+}
+
+
+#header {
+    position: relative;
+    margin: 0 auto;
+    max-width: 920px;
+    min-width: 460px;
+    text-align: right;
+}
+
+
+a.headerlink {
+    position: relative;
+    top: 1em;
+    padding: 0 0.5em;
+    color: #eee;
+}
+
+a.headerlogo {
+    position: absolute;
+    display: block;
+    width: 137px;
+    height: 48px;
+    margin: 10px;
+    background: url("../img/headerlogo.png");
+}
+
+
+#footerwrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    min-width: 460px;
+    min-height: 1.2em; 
+	
+    background: #222;
+    background: -webkit-linear-gradient(#333, #111); /* For Safari */
+    background: -o-linear-gradient(#333, #111); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#333, #111); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#333, #111); /* Standard syntax */
+
+    border-top: thin #666 solid;
+	
+    z-index: 50;
+    // text-align: center;
+    box-shadow: 0px -5px 5px #080808;
+
+}
+
+
+#footer {
+    position: relative;
+    margin: 0 auto;
+    padding: 0.6em 0;
+    min-width: 460px;
+    max-width: 920px;
+    width: 100%;
+    font-size: 60%;
+}
+
+div.contentwrapper {
+    left: 0;
+    right: 0;
+    max-width: 840px;
+    min-width: 400px;
+    margin: 6em auto 2em auto;
+    color: #111;
+	
+    background: #eee;
+    background: -webkit-linear-gradient(left, #ddd, #fff , #ddd); /* For Safari */
+    background: -o-linear-gradient(right, #ddd, #fff, #ddd); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(right, #ddd, #fff, #ddd); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to right, #ddd, #fff , #ddd); /* Standard syntax */	
+
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+
+    padding: 2em;
+    border: thin #333 solid;
+    box-shadow: 10px 10px 2px #111;
+}
+
+div.contentwrappernobg {
+
+    left: 0;
+    right: 0;
+    max-width: 840px;
+    min-width: 400px;
+    margin: 0 auto;
+
+    padding: 1em;
+}
+
+div.notopmargin {
+    margin: 0 auto 2em auto;
+}
+
+img.speedcubinggraph {
+    border-radius: 8px;
+    box-shadow: 10px 10px 5px #0a0a0a;
+    max-width: 100%;
+}
+
+div.content {
+    text-align: justify;
+}
+
+div.contentimagewrapper {
+    text-align: center;
+}
+
+#softwarepicwrapper {
+    float: right;
+    padding: 1em 2em;
+}
+
+
+#spacemanpic {
+    border: 1px solid #333;
+    box-shadow: 5px 5px 2px #111;
+}
+
+#biglogopic {
+    min-width: 270px;
+    max-width: 520px;
+    width: 100%;
+}
+
+img.buttonpic {
+    height: 24px;
+    padding: 0 12px 0 6px;
+}
+
+h1 {
+    padding: 0 4em;
+    text-align: left;
+}
+
+h2 {
+    padding: 0 2em;
+    text-align: left;
+}
+
+h3 {
+    padding: 0 4em;
+    text-align: left;
+}
+
+
+div.linkdescription {
+    
+    padding: 0.3em 2em;
+    margin: 0 0 1em 0;
+    color: #222;
+}
+
+
+a.bouncylink {
+    position: relative;
+    //margin: 0.5em;
+    padding: 0.5em;
+    top: 0;
+}
+
+a.bouncylink:hover {
+    top: 2em;
+    padding: 2em;
+}
+
+a.slidinglink {
+    color: #222;
+    position: relative;
+}
+
+a.slidinglink:hover {
+    left: 0.5em;
+    font-style: italic;
+}
+
+div.gamename {
+    position: relative;
+    left: 0;
+    font-size: large;
+    font-weight: bold;
+    font-style: italic;
+    // color: #238;
+    text-decoration: none;
+        
+}
+
+
+
+
+a.softwaretablerow {
+    color: #238;
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    width: 95%;
+    background: -moz-linear-gradient(top, #ffffff 0%, #cccccc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    -moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    -webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    //text-shadow: 0px 1px 0px rgba(000,000,000,0.4), 0px 0px 0px rgba(17,17,17,0.3);  
+    // text-align: center;
+
+}
+
+a.softwaretablerow:hover {
+    color: #f70;
+    border: 1px solid #222;
+    background: -moz-linear-gradient(top, #fff 0%, #fb9);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#dcb));                
+}    
+
+
+a.dlbutton {
+    color: #222;
+    position: relative;
+    display: inline-block;
+    padding: 8px 16px;
+    width: 240px;
+    background: -moz-linear-gradient(top, #ffffff 0%, #cccccc);
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#cccccc));
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    border-radius: 6px;
+    border: 1px solid #888;
+    -moz-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    -webkit-box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    box-shadow: 0px 1px 3px rgba(000,000,000,0.5), inset 0px 0px 10px rgba(087,087,087,0.7);
+    //text-shadow: 0px 1px 0px rgba(000,000,000,0.4);  
+    text-align: center;
+
+}
+
+a.dlbutton:hover {
+    border: 1px solid #222;
+    background: -moz-linear-gradient(top, #fff 0%, #fb9);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#fb9));                
+    //text-shadow: 0px 1px 0px rgba(0,0,0,0.5);
+    color: #b62;
+
+}
+
+
+
+div.tableofcontentsimage {
+    float: right;
+    padding: 20px 10px 20px 40px;
+
+}
+
+div.tableofcontents {
+    display: inline-block;
+    width: 165px;
+}
+
+
+#hireme {
+    position: fixed;
+    top: 0.5em;    
+    margin: 0 180px;
+    z-index:100;
+    font-weight: 700;
+    text-shadow: 0px 1px 0px rgba(0,0,0,0.5)
+}
+
+#hirebutton {
+    background: -moz-linear-gradient(top, #fff 0%, #0f0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#0f0));
+    border: 1px solid #222;
+    padding: 1em;
+    
+}
+
+#hirebutton:hover {
+    background: -moz-linear-gradient(top, #bfb 0%, #0f0);
+    background: -webkit-gradient(linear, left top, left bottom, from(#bfb), to(#0f0));    
+    //font-size: 120%;
+    color: #060;          
+}
+
+form table {
+    width:100%;
+    padding: 0 1em;
+}
+
+form table td {
+    min-width: 5em;
+    padding: 1em 0;
+    vertical-align: top;
+}
+
+
+
+form textarea, form input { 
+    width: 100%; 
+    padding: 0.5em;
+    
+}
+
+
+/* ==========================================================================
+   Hyperlink Decorations
+   ========================================================================== */
+
+a {
+    color: #238;
+    text-decoration: none;
+    -webkit-transition: 0.5s; -moz-transition: all 0.5s ease-in-out; -o-transition: all 0.5s ease-in-out; -ms-transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #f70;
+    // font-style: italic;
+}
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (max-width: 600px) {
+    /* Style adjustments for viewports that meet the condition */
+    #softwarepicwrapper {
+        float: none;
+    }
+    #hireme {
+        top: 5em;    
+        margin: 0 10px 0 10px;
+    }
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
